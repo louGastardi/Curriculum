@@ -1,0 +1,424 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 100px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #ffffff;
+}
+header {
+  background-color: #f7d794;
+  height: 550px;
+  padding: 20px, 0;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Barra de navegacao Desktop */
+
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 2em 0 4em 0;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+.nav-list ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav li {
+  display: inline;
+  padding: 0 0.5em 0 0;
+  list-style-type: circle;
+}
+
+.nav-item {
+  text-transform: uppercase;
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+}
+nav li::after {
+  padding: 0 0 0 0.5em;
+  content: "\2022";
+  font-weight: bold;
+  font-size: 26px;
+}
+nav li:last-child::after {
+  content: "";
+}
+
+nav a:hover {
+  color: #edb95d;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* Barra de navegacao mobile */
+
+.mobile-menu-icon {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/* conteúdo header */
+
+.container_info_pessoal {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.info_pessoal {
+  display: flex;
+  flex-direction: column;
+}
+
+.foto_e_redes {
+  display: flex;
+  flex-direction: column;
+}
+
+.redes-sociais,
+.lista-softwares {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.imagem_foto {
+  display: block;
+  width: 300px;
+  padding-bottom: 2em;
+}
+
+.imagem_icon {
+  width: 26px;
+  display: inline;
+  padding-right: 3em;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  display: flex;
+  padding: 2em 0 0.1em 0;
+}
+
+h2 {
+  font-size: 18px;
+  display: flex;
+  text-align: left;
+}
+
+.two-tier {
+  display: flex;
+  padding: 0 0 1em 0;
+  align-items: center;
+}
+
+.separate_information {
+  display: flex;
+  padding: 1em 0 0 0;
+  align-items: center;
+}
+
+.imagem_redes {
+  height: auto;
+  max-width: 32px;
+}
+
+.redes-sociais li,
+.lista_ferramentas li,
+.lista_interesses li {
+  display: inline;
+}
+
+/* conteúdo main */
+
+main {
+  display: block;
+  justify-content: center;
+}
+
+.info_container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2em 15em 8em 15em;
+}
+
+.info_container_LessPadding {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2em 0 1em 0;
+}
+
+.sobre_mim_texto h2 {
+  justify-content: center;
+  font-weight: bold;
+  padding: 0 0 2em 0;
+}
+
+main h2,
+footer h2 {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+}
+
+h3 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 2;
+}
+
+.info_box {
+  display: inline;
+  width: 300px;
+  padding: 2%;
+  background-color: #f7d794;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.interesse01,
+.interesse02,
+.interesse03 {
+  display: none;
+  width: 300px;
+  padding: 2%;
+  background-color: #f7d794;
+  border-radius: 50px;
+
+  text-align: center;
+}
+
+.imagem_sobre_mim {
+  display: block;
+  width: 300px;
+  height: 300px;
+  padding: 1em 3em 1em 6em;
+}
+
+.sobre_mim_texto {
+  width: 600px;
+  align-self: center;
+  text-align: center;
+  padding-left: 5em;
+}
+
+p {
+  line-height: 1.5;
+  text-align: center;
+}
+
+.imagens_ferramentas {
+  width: 100px;
+  padding-right: 3em;
+}
+
+.imagens_interesses {
+  width: 100px;
+  height: 100px;
+  margin: 32px;
+  transition: transform 0.2s; /* Animation */
+}
+
+.imagens_interesses:hover {
+  transform: scale(1.2);
+}
+
+/* conteúdo footer */
+
+footer {
+  display: block;
+  background-color: #f7d794;
+  height: 150px;
+  padding: 20px;
+}
+
+footer {
+  line-height: 5;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #edb95d;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.show {
+  display: block;
+}
+
+/* Design responsivo */
+
+@media screen and (max-width: 730px) {
+  html {
+    scroll-padding: 15px;
+  }
+
+  nav li {
+    display: block;
+    text-align: center;
+    padding: 5% 0;
+  }
+
+  header,
+  footer,
+  .container_info_pessoal,
+  .info_container {
+    display: block;
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    padding: 0 0;
+  }
+
+  .imagem_foto,
+  .imagem_sobre_mim,
+  .sobre_mim_texto {
+    display: block;
+    width: 100%;
+    height: fit-content;
+    align-self: center;
+    align-content: center;
+    padding: 3em 2em;
+    box-sizing: border-box;
+    margin: none;
+  }
+
+  .info_box {
+    display: block;
+    width: 390px;
+    text-align: center;
+    height: fit-content;
+    align-self: center;
+    align-content: center;
+    padding: 3em 2em;
+    border: 20px solid white;
+    box-sizing: border-box;
+  }
+
+  .interesse01,
+  .interesse02,
+  .interesse03 {
+    display: none;
+    width: 390px;
+    text-align: center;
+    height: fit-content;
+    align-self: center;
+    align-content: center;
+    padding: 3em 2em;
+    border: 20px solid white;
+    box-sizing: border-box;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .imagem_redes {
+    padding-bottom: 2em;
+  }
+
+  h1,
+  header h2,
+  a,
+  .two-tier {
+    align-self: center;
+    padding: 0.5em 0;
+  }
+
+  header h2 {
+    align-self: center;
+    padding: 0.5em 0;
+  }
+  h2 {
+    align-self: center;
+    padding-top: 2em;
+  }
+
+  footer h2,
+  footer p {
+    align-self: center;
+    padding: 1em 0;
+    line-height: 2;
+  }
+
+  .imagem_icon {
+    padding: 0 2em 0 4em;
+  }
+  .lista_ferramentas,
+  .lista_interesses {
+    display: inline flex;
+    align-content: space-between;
+  }
+
+  .imagens_ferramentas {
+    padding: 1.5em;
+    width: 20%;
+    height: auto;
+  }
+
+  /* Mobile Nav */
+  .nav-bar {
+    padding-bottom: 2em;
+  }
+
+  .nav-item {
+    display: none;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  .icon {
+    width: 70%;
+  }
+
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  .mobile-menu .nav-item {
+    display: block;
+    padding-top: 1em;
+  }
+
+  .mobile-menu button {
+    width: 100%;
+  }
+  .open {
+    display: block;
+  }
+
+  .imagens_interesses {
+    width: 50px;
+    height: 50px;
+    margin: 18px;
+  }
+}

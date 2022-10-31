@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+    
+    <title>Lou Gastardi Dev</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <div class="nav-list">
+          <ul>
+            <li class="nav-item"><a href="#sobreMim">Sobre Mim</a></li>
+            <li class="nav-item"><a href="#educacao">Educação</a></li>
+            <li class="nav-item"><a href="#experiencia">Experiência</a></li>
+            <li class="nav-item"><a href="#habilidade">Habilidade</a></li>
+            <li class="nav-item"><a href="#interesses">Interesses</a></li>
+          </ul>
+        </div>
+
+        <div class="mobile-menu-icon">
+          <button onclick="menuShow()"><img class="icon" src="images/menu_burger.png" alt="menu Burger" /></button>
+        </div>
+      </nav>
+
+      <div class="mobile-menu">
+        <ul>
+          <li class="nav-item"><a href="#sobreMim">Sobre Mim</a></li>
+          <li class="nav-item"><a href="#educacao">Educação</a></li>
+          <li class="nav-item"><a href="#experiencia">Experiência</a></li>
+          <li class="nav-item"><a href="#habilidade">Habilidades</a></li>
+          <li class="nav-item"><a href="#interesses">Interesses</a></li>
+        </ul>
+      </div>
+
+      <div class="container_info_pessoal">
+        <div class="info_pessoal">
+          <h1>Lou Gastardi</h1>
+          <p class="two-tier">SHE/HER</p>
+
+          <h2 class="two-tier">Desenvolvedora Web</h2>
+
+          <div class="separate_information">
+            <img class="imagem_icon" src="images/o_email.png" />
+            <h2>l.gastardi@hotmail.com</h2>
+          </div>
+          <!-- <div class="separate_information">
+            <img class="imagem_icon" src="images/whatsapp.png" />
+            <h2>(00) 000000000</h2>
+          </div> -->
+          <div class="separate_information">
+            <img class="imagem_icon" src="images/address_1.png" />
+            <h2>Vitória ES - BR</h2>
+          </div>
+        </div>
+        <div class="foto_e_redes">
+          <img class="imagem_foto" src="images/perfil.png" />
+          <ul class="redes-sociais">
+            <li>
+              <a href="https://www.linkedin.com/in/louise-gastardi-72955587/"><img class="imagem_redes" src="images/linkedin.png" /></a>
+            </li>
+            <li>
+              <a href="https://github.com/louGastardi"><img class="imagem_redes" src="images/github.png" /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/loulou_do_role"><img class="imagem_redes" src="images/instagram.png" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="info_container">
+        <img class="imagem_sobre_mim" src="images/foto_01.png"/>
+        <img class="imagem_sobre_mim" src="images/foto_02.png"/>
+        <img class="imagem_sobre_mim" src="images/foto_03.png"/>
+
+
+        <div class="sobre_mim_texto">
+          <h2 id="sobreMim">Sobre mim</h2>
+          <p>
+            Olá, meu nome é Louise, mas pode me chamar de Lou. Sou capixaba, tenho 34 anos, sou feminista, proguessista, lésbica e amo água de coco.
+          </p>
+          <p>Aos 18 anos me mudei para Alemanha onde me graduei no curso de design midiático pela Universidade Bauhaus de Weimar.</p>
+          <p>
+            Após 8 anos atuando na produção de vídeos live action, animação digital e stop-motion, senti que precisava de novos desafios e gostaria de
+            expandir minhas áreas de conhecimento.
+          </p>
+          <p>
+            Após alguma pesquisa e estudo me interessei bastante por desenvolvimento Web e decidi que mudaria de carreira, mas sem deixar pra trás o
+            conhecimento adquirido até o momento.
+          </p>
+          <p>Atualmente vivo com minha esposa, gata e cachorro.</p>
+        </div>
+      </div>
+
+      <h2 id="educacao">Educação</h2>
+
+      <div class="info_container">
+        <div class="info_box">
+          <h3>Cursos de desenvolvimento:</h3>
+          <p>
+            Alura Include (2022) - <br />
+            Cursos de HTML, CSS, JavaScript.
+          </p>
+          <p>
+            Udemy (2022) - <br />
+            The Complete JavaScript Course 2022: From Zero to Expert!
+          </p>
+        </div>
+        <div class="info_box">
+          <h3>Idiomas:</h3>
+          <p>Português (Nativo)<br />Alemão (Fluente)<br />Inglês (Fluente)<br />Espanhol (Fluente)</p>
+        </div>
+      </div>
+
+      <h2 id="experiencia">Experiência</h2>
+      <div class="info_container">
+        <div class="info_box">
+          <p>
+            Minha experiencia de 8 anos como Motion Designer me trouxe uma ótima base para estruturar projetos, cumprir prazos e sempre procurar novas
+            soluções para os desafios da carreira.
+          </p>
+        </div>
+        <div class="info_box">
+          <p>
+            O trabalho em sets de filmagens e organização de festivais de filmes me trouxe uma vasta experiência em como trabalhar em equipe e sob
+            pressão de tempo.
+          </p>
+          <p></p>
+        </div>
+      </div>
+
+      <h2 id="habilidade">Habilidades</h2>
+      <div class="info_container">
+        <ul class="lista_ferramentas">
+          <li><img class="imagens_ferramentas" src="images/HTML5_Logo.png" /></li>
+          <li><img class="imagens_ferramentas" src="images/CSS3_Logo.png" /></li>
+          <li><img class="imagens_ferramentas" src="images/JS_Logo.png" /></li>
+          <li><img class="imagens_ferramentas" src="images/Git_Logo.png" /></li>
+          <li><img class="imagens_ferramentas" src="images/AI_Logo.svg" /></li>
+          <li><img class="imagens_ferramentas" src="images/AE_Logo.png" /></li>
+          <li><img class="imagens_ferramentas" src="images/PR_Logo.png" /></li>
+        </ul>
+
+      </div>
+
+      <h2 id="interesses">Interesses</h2>
+      <div class="info_container_LessPadding">
+        <ul class="lista_interesses">
+          <li><button onclick="toggleElement01()"><img class="imagens_interesses" src="images/interesses_01.png" /></button></li>
+          <li><button onclick="toggleElement02()"><img class="imagens_interesses" src="images/interesses_01.png" /></button></li>
+          <li><button onclick="toggleElement03()"><img class="imagens_interesses" src="images/interesses_01.png" /></button></li>
+        </ul>
+      </div>
+
+      <div class="info_container">
+
+        <div class="interesse01">
+          <p>
+            Rolezeira por natureza, amo ir à praia, fazer trilhas, viajar e conhecer lugares novos. Seja de bike, longboard, carro barco ou a pé, o importante mesmo são as companhias so rolê.
+          </p>
+        </div>
+   
+
+        <div class="interesse02">
+          <p>
+            Música é uma parte muito importante na minha vida. Desde adolescente já tocava baixo e percursão em bandinhas de punk rock. Hoje aprecio desde de um bom samba até um hardcore do bom.
+          </p>
+        </div>
+
+        <div class="interesse03">
+          <p>
+            Só de pensar em comida já bate aquela fome. Seja para cozinhar ou comer, adoro experimentar as mais variadas culinárias, em especial a asiática, indiana e latino americana.
+          </p>
+        </div>
+      </div>
+    </div>
+        
+      </div>
+    </main>
+
+    <footer>
+      <h2>
+        Contato através do <a href="mailto:l.gastardi@hotmail.com">e-mail</a> ou
+        <a href="https://www.linkedin.com/in/louise-gastardi-72955587/">Linkedin</a>.
+      </h2>
+      <p>&copy; Lou Gastardi 2022</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
